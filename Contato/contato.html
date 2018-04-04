@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aluguel de pais</title>
+	<!-- Última versão compilada e otimizada do CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- Biblioteca do jQuery -->
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Última versão complicada do JavaScript -->
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="estilo.css">
+	
+</head>
+<body class="bodao">
+
+	<div align="center">
+		<img src="../Imagens/logo nova.PNG" width="250" height="200">
+		</div>
+		
+		<div class="nav-custom-style">
+		<nav>
+				<ul>  
+		  
+		<li class ="menu"><a href="../index.html">Home</a> </li>  
+		<li class ="menu"><a href="../Cadastro/Cad.html">Cadastro</a> </li>
+		<li class ="menu"><a href="../Dados Pessoais/Dados Pessoais.html">Dados Pessoais</a> </li>
+		<li class="menu"><a href="../Pais/pais.html">Pais</a></li>    
+		<li class ="menu"><a href="../Contato/contato.html">Contatos</a></li>  
+		<li class ="menu"><a href="../Sobre/sobre.html">Sobre</a></li>
+		<li class="menu" id="dmenu"><a href="../Carrinho/Carrinho.html">Carrinho</a></li>
+		<li class="menu" id="dmenu"><a id="ft" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+
+		</div>
+				</ul>				
+		</nav>
+
+		<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer nego">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="../Imagens/pessoa.PNG" width="50" height="300" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container nego">
+      <label for="uname"><b>Usuário:</b></label>
+      <input type="text" class="pesq" placeholder="Seu Usuário" name="uname" required>
+  	</br>
+      <label for="psw"><b>Senha:</b></label>
+      <input type="password" class="pesq" placeholder="Sua Senha" name="psw" required>
+        
+      </br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Me lembre
+      </label>
+
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+    	<button type="submit">Login</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+		
+		<div class="divao" >
+			<h2 align="center">Contatos</h2>
+			<form action="" method="post">
+			
+				<p>Nome:</p><input type="text" id="nome" name="nome" 
+				onblur="validarNome()"></br>
+				<p>Email:</p><input type="text" name="email"></br>
+				<p>Telefone:</p><input type="text" id="telefone"  name="telefone" onblur="validarTelefone()"></br>
+				<p>Texto de contato:</p><textarea rows="5" cols="50"></textarea></br>
+				<input class="buton" type="submit" value="Enviar">
+			</form>
+
+		</div>
+
+
+
+		
+
+		<div class="foot divao">
+	<footer align="center">
+		
+		<p id="ft">Feito por Júlio César; José Daniel e Gabriel Barroso. 
+		© Copyright 2017-2018 Broderiz's - All Rights Reserved - Ilegal</p>
+
+	</footer>
+	</div>
+			
+	</body>
+
+
+</html>
