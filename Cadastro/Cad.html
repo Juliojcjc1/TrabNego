@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Aluguel de pais</title>
+	<meta charset="utf-8">
 	<!-- Última versão compilada e otimizada do CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <!-- Biblioteca do jQuery -->
@@ -43,7 +44,7 @@
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="../logingeral.php" method="post">
     <div class="imgcontainer nego">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="../Imagens/pessoa.PNG" width="50" height="300" alt="Avatar" class="avatar">
@@ -73,7 +74,7 @@
 	<h1 align="center">Cadastro de usuário</h1>
 	<div class="divao">
 
-	<form action="" method="post">
+	<form action="Cad.php" method="post">
 	
 	<div class="row">
 		<div class="col-md-6">
@@ -84,12 +85,12 @@
 	<p id ="f">CPF:</p> <input type="text" id="cpf" name="cpf"><br>
 
 	<p id ="f">Endereço:</p> <input type="text" id="ender" name="ender"><br>
-	<input class="butonC" type="button" value="Cadastrar" name="vali" onclick="validarN(); DataNas();validarCPF(); Endereco(); Cep(); validarU();  validarSenha(); Cadastrar()" ></br>
+	<input class="butonC" type="submit" value="Cadastrar" name="vali" onclick="validarN(); DataNas();validarCPF(); Endereco(); Cep(); validarU();  validarSenha(); Cadastrar()" ></br>
 		</div>
 		<div class="col-md-6">
 	<p id ="f">Cep:</p> <input type="text" id="cep" name="cep"><br>
 
-	<p id ="f">E-mail:</p></font><input type="text" id="usuario" name="usuario"><br>
+	<p id ="f">E-mail:</p></font><input type="text" id="usuario" name="email"><br>
 
 	<p id ="f">Senha:</p> <input type="password" id="senha" name="senha"><br>
 
